@@ -1,6 +1,9 @@
 // Note to self, next time don't spend 12 hours trying to do a simple problem     //
 // take the easy way out and do it in five minutes                                //
 
+
+/* I literally tried to make an algorithm to do this, you know like the mario pyramids??? *///
+
 public class DiamondfromHell
 {
 	public static void main(String[]args)
