@@ -42,10 +42,9 @@ public class CaesarCipher
     // encrypts a string
     public static String caesarEncipher (String s, int key) 
     {
-        key %= 26;
-        String code = "\n";
+        int sizeOfLanguage = 26;
         for (int i = 0; i < s.length(); i++) {
-            if (isAlpha(s.charAt(i)) && isUpper) code += shiftChars(s.charAt(i), key, false);
+            if (isAlpha(s.charAt(i)) && isUpper) code += shiftChars(s.charAt(i), key % sizeOfLanguage, false);
             else code += s.charAt(i);
         }
         return code;
@@ -67,7 +66,6 @@ public class CaesarCipher
     // shifts char by given amount
     private static char shiftChars(int c, int key, boolean negative) 
     {
-
         int a = 'A';
         if (isLower) a = 'a'; // checks caps
         
